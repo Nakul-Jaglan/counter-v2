@@ -13,10 +13,10 @@ export default function Home() {
       alert("Counter cannot be negative");
       return;
     }
-    setNumber((prev) => prev - 1);
+    setNumber((prev) => prev - 1)
   }
   const reset = () => {
-    setNumber(0);
+    setNumber(0)
   }
   return (
     <>
@@ -33,7 +33,7 @@ export default function Home() {
             <button className="action-btn" onClick={increment}>+</button>
             <button className="action-btn" onClick={reset}>Reset</button>
             <button className="action-btn" onClick={decrement}>-</button>
-          </section>
+          </section> 
         </section>
       </main>
     </>
