@@ -36,6 +36,12 @@ export default function Home() {
           </section> 
         </section>
       </main>
+
+      <footer>
+        <p className='footer-text'>Made with ❤️ by <a href="https://www.linkedin.com/in/nakuljaglan/" target="_blank">Nakul</a></p>
+        <p className='footer-text'>Source code available on <a href="https://github.com/Nakul-Jaglan/counter-v2" target="_blank">GitHub</a></p>
+        <p className='footer-text'>Check out my other projects on <a href="https://my.newtonschool.co/user/jaat" target="_blank">My Profile</a></p>
+      </footer>
     </>
   );
 }

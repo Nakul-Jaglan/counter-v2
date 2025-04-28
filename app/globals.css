@@ -67,3 +67,11 @@ body{
 .counter-controls button:active{
   transform: scale(0.95);
 }
+
+footer{
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 38%;
+  font-size: 1.2em;
+}
