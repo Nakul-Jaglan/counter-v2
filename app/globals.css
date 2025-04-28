@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+html,body{
+  font-family: "Montserrat", sans-serif;
+}
+
+body{
+  background: linear-gradient(to right, #21A179, #81AE9D);
+}
+
+.title{
+  text-align: center;
+  color: #000;
+  font-size: 3em;
+  border-bottom: 2px solid #000;
+}
+
+.counter{
+  background-color: #FB9F89;
+  width: 40%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 55%;
+  left: 50%;
+  padding: 2% 0 5% 0;
+  margin-top: 3%;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.338);
+}
+
+.counter-title{
+  text-align: center;
+  color: #000;
+  font-size: 4em;
+}
+
+.counter-value{
+  text-align: center;
+  color: #000;
+  font-size: 4em;
+  padding: 0 0 2% 0;
+  margin: 0;
+}
+
+.counter-controls{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+  margin-top: 3%;
+}
+
+.counter-controls button{
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 2% 3%;
+  font-size: 2em;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.counter-controls button:hover{
+  background-color: #fff;
+  color: #000;
+  transition: all 0.5s ease;
+}
+.counter-controls button:active{
+  transform: scale(0.95);
+}
