@@ -13,55 +13,63 @@ body{
   color: #000;
   font-size: 3em;
   border-bottom: 2px solid #000;
+  margin: 1%;
+}
+
+.title h1{
+  margin: 1%;
 }
 
 .counter{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   background-color: #FB9F89;
-  width: 40%;
-  position: absolute;
-  transform: translate(-50%, -50%);
-  top: 55%;
-  left: 50%;
-  padding: 2% 0 5% 0;
-  margin-top: 3%;
+  width: 44%;
+  margin: 2% auto;
   border-radius: 10px;
-  box-shadow: 0 0 20px rgba(0,0,0,0.338);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.338);
+  padding: 2% 0 2% 0;
 }
 
 .counter-title{
   text-align: center;
   color: #000;
   font-size: 4em;
+  margin: 2%;
 }
 
 .counter-value{
   text-align: center;
   color: #000;
-  font-size: 4em;
+  font-size: 6em;
   padding: 0 0 2% 0;
   margin: 0;
 }
 
 .counter-controls{
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 5%;
+  gap: 20%;
   margin-top: 3%;
 }
 
 .counter-controls button{
   background-color: #000;
   color: #fff;
-  border: none;
-  padding: 2% 3%;
-  font-size: 2em;
+  padding: 5% 5%;
+  font-size: 1.5em;
   border-radius: 5px;
   cursor: pointer;
+  border: 1px solid #000;
+  font-family: "Montserrat", sans-serif;
 }
 .counter-controls button:hover{
   background-color: #fff;
   color: #000;
+  border: 1px solid #fff;
   transition: all 0.5s ease;
 }
 .counter-controls button:active{
@@ -70,32 +78,48 @@ body{
 
 footer{
   text-align: center;
-  position: fixed;
-  bottom: 0;
-  left: 38%;
   font-size: 1.2em;
+}
+
+@media (max-width: 1024px) {
+  .counter{
+    width: 60%;
+  }
+}
+
+@media (max-width: 768px) {
+  .counter{
+    width: 80%;
+    margin-top: 10%;
+    padding-bottom: 5%;
+  }
+  .counter-controls{
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+  }
+  .counter-controls button{
+    width: 100%;
+    margin: 3% 100;
+    font-size: 2em;
+  }
 }
 
 @media (max-width: 480px) {
   .counter{
-    width: 80%;
+    width: 90%;
+    margin-top: 10%;
+    padding-bottom: 5%;
   }
-  .counter-title{
-    font-size: 2.5em;
-  }
-  .counter-value{
-    font-size: 2.5em;
+  .counter-controls{
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
   }
   .counter-controls button{
-    font-size: 1.5em;
-    padding: 1%;
-    width: 35%;
-  }
-  footer{
-    left: 10%;
-    font-size: 1.05em;
-  }
-  .title{
+    width: 90%;
+    margin: 3% 100;
     font-size: 2em;
   }
+
 }

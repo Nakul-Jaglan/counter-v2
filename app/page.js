@@ -30,9 +30,9 @@ export default function Home() {
           <h2 className="counter-title">Counter</h2>
           <p className="counter-value">{number}</p>
           <section className="counter-controls">
-            <button className="action-btn" onClick={increment}>+</button>
+            <button className="action-btn" onClick={increment}>Increase</button>
             <button className="action-btn" onClick={reset}>Reset</button>
-            <button className="action-btn" onClick={decrement}>-</button>
+            <button className="action-btn" onClick={decrement}>Decrease</button>
           </section> 
         </section>
       </main>
